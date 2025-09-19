@@ -5,4 +5,9 @@
 //  Created by Brittany on 9/18/25.
 //
 
-import Foundation
+
+import UIKit
+
+class MapViewController: UIViewController {
+
+}
