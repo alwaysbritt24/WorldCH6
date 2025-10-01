@@ -11,7 +11,7 @@
         <!--Convert-->
         <scene sceneID="tne-QT-ifu">
             <objects>
-                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="World" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="BYZ-38-t0r" customClass="ConversionViewController" customModule="World" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
                         <rect key="frame" x="0.0" y="0.0" width="393" height="769"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -45,6 +45,9 @@
                                 <color key="textColor" red="0.88235294119999996" green="0.34509803919999998" blue="0.16078431369999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="70"/>
                                 <textInputTraits key="textInputTraits" autocorrectionType="no" spellCheckingType="no" keyboardType="decimalPad"/>
+                                <connections>
+                                    <action selector="fahrenheitFieldEditingChanged:" destination="BYZ-38-t0r" eventType="editingChanged" id="Gsl-oF-Lwr"/>
+                                </connections>
                             </textField>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
@@ -61,10 +64,14 @@
                             <constraint firstItem="fFQ-Zs-RRj" firstAttribute="top" secondItem="9lk-Re-2bD" secondAttribute="bottom" constant="8" id="Ukf-t5-KDr"/>
                             <constraint firstItem="rcX-Ag-K5p" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="Yjw-2G-sL4"/>
                             <constraint firstItem="9lk-Re-2bD" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="chz-sR-Uqi"/>
+                            <constraint firstItem="rcX-Ag-K5p" firstAttribute="centerX" secondItem="6Tk-OE-BBY" secondAttribute="centerX" id="jQS-qB-gkD"/>
                             <constraint firstItem="kah-5t-Chk" firstAttribute="top" secondItem="fFQ-Zs-RRj" secondAttribute="bottom" constant="8" id="uV1-CC-gy1"/>
                         </constraints>
                     </view>
                     <tabBarItem key="tabBarItem" title="Convert" image="thermometer.high" catalog="system" id="CpF-4O-WX8"/>
+                    <connections>
+                        <outlet property="celsiusLabel" destination="rcX-Ag-K5p" id="pFh-oz-IXb"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
