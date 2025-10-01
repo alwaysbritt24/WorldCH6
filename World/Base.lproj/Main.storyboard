@@ -1,8 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="23727" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="53r-sD-XXn">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="24127" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="53r-sD-XXn">
     <device id="retina6_12" orientation="portrait" appearance="light"/>
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="23721"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="24063"/>
         <capability name="Map view configurations" minToolsVersion="14.0"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="System colors in document resources" minToolsVersion="11.0"/>
@@ -14,53 +14,54 @@
             <objects>
                 <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="World" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
-                        <rect key="frame" x="0.0" y="0.0" width="393" height="735"/>
+                        <rect key="frame" x="0.0" y="0.0" width="393" height="769"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="212" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="xfy-gb-Dyu">
-                                <rect key="frame" x="141" y="126" width="111" height="84"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="70"/>
-                                <color key="textColor" red="0.88235294119999996" green="0.34509803919999998" blue="0.16078431369999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                                <nil key="highlightedColor"/>
-                            </label>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Degress Fahrenheit" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="fFQ-Zs-RRj">
-                                <rect key="frame" x="47.666666666666657" y="218" width="298" height="43"/>
+                                <rect key="frame" x="47.666666666666657" y="219.33333333333334" width="298" height="43.000000000000028"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="36"/>
                                 <color key="textColor" red="0.88235294119999996" green="0.34509803919999998" blue="0.16078431369999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="is really " textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="kah-5t-Chk">
-                                <rect key="frame" x="135.66666666666666" y="269" width="121.99999999999997" height="43"/>
+                                <rect key="frame" x="135.66666666666666" y="270.33333333333331" width="121.99999999999997" height="43"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="36"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="100" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="rcX-Ag-K5p">
-                                <rect key="frame" x="138" y="320" width="117" height="84"/>
+                                <rect key="frame" x="138" y="321.33333333333331" width="117" height="84"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="70"/>
                                 <color key="textColor" red="0.88235294117647056" green="0.34509803921568627" blue="0.16078431372549018" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Degrees Celsius" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ivv-Dk-UOQ">
-                                <rect key="frame" x="71.666666666666686" y="412" width="250" height="43"/>
+                                <rect key="frame" x="71.666666666666686" y="413.33333333333331" width="250" height="43"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="36"/>
                                 <color key="textColor" red="0.88235294119999996" green="0.34509803919999998" blue="0.16078431369999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
+                            <textField opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="248" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="value" textAlignment="center" adjustsFontSizeToFit="NO" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="9lk-Re-2bD">
+                                <rect key="frame" x="118.66666666666669" y="126" width="156" height="85.333333333333314"/>
+                                <color key="textColor" red="0.88235294119999996" green="0.34509803919999998" blue="0.16078431369999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="70"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                         <color key="backgroundColor" red="0.96078431372549022" green="0.95686274509803915" blue="0.94509803921568625" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
-                            <constraint firstItem="rcX-Ag-K5p" firstAttribute="centerX" secondItem="xfy-gb-Dyu" secondAttribute="centerX" id="DEZ-Md-HuN"/>
+                            <constraint firstItem="kah-5t-Chk" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="9fG-nO-p8Q"/>
+                            <constraint firstItem="fFQ-Zs-RRj" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="Fvy-Ll-Anf"/>
+                            <constraint firstItem="9lk-Re-2bD" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="8" id="G2g-Oe-5Ua"/>
+                            <constraint firstItem="ivv-Dk-UOQ" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="Hfc-92-kPS"/>
                             <constraint firstItem="rcX-Ag-K5p" firstAttribute="top" secondItem="kah-5t-Chk" secondAttribute="bottom" constant="8" id="Pms-7l-6Sb"/>
                             <constraint firstItem="ivv-Dk-UOQ" firstAttribute="top" secondItem="rcX-Ag-K5p" secondAttribute="bottom" constant="8" id="Pne-xH-9w6"/>
-                            <constraint firstItem="ivv-Dk-UOQ" firstAttribute="centerX" secondItem="xfy-gb-Dyu" secondAttribute="centerX" id="bn2-I6-vF9"/>
-                            <constraint firstItem="kah-5t-Chk" firstAttribute="centerX" secondItem="xfy-gb-Dyu" secondAttribute="centerX" id="ikS-e0-b35"/>
-                            <constraint firstItem="fFQ-Zs-RRj" firstAttribute="top" secondItem="xfy-gb-Dyu" secondAttribute="bottom" constant="8" id="jWX-QN-qTE"/>
+                            <constraint firstItem="9lk-Re-2bD" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="TGB-dO-2Wa"/>
+                            <constraint firstItem="fFQ-Zs-RRj" firstAttribute="top" secondItem="9lk-Re-2bD" secondAttribute="bottom" constant="8" id="Ukf-t5-KDr"/>
+                            <constraint firstItem="rcX-Ag-K5p" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="Yjw-2G-sL4"/>
+                            <constraint firstItem="9lk-Re-2bD" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="chz-sR-Uqi"/>
                             <constraint firstItem="kah-5t-Chk" firstAttribute="top" secondItem="fFQ-Zs-RRj" secondAttribute="bottom" constant="8" id="uV1-CC-gy1"/>
-                            <constraint firstItem="xfy-gb-Dyu" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="ukk-iW-e0M"/>
-                            <constraint firstItem="xfy-gb-Dyu" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="8" id="wkg-JP-bMr"/>
-                            <constraint firstItem="fFQ-Zs-RRj" firstAttribute="centerX" secondItem="xfy-gb-Dyu" secondAttribute="centerX" id="x5Q-9v-vdK"/>
                         </constraints>
                     </view>
                     <tabBarItem key="tabBarItem" title="Convert" image="thermometer.high" catalog="system" id="CpF-4O-WX8"/>
@@ -73,12 +74,12 @@
         <scene sceneID="3nD-Bd-aHA">
             <objects>
                 <viewController id="lok-Om-GCt" customClass="MapViewController" customModule="World" customModuleProvider="target" sceneMemberID="viewController">
-                    <view key="view" contentMode="scaleToFill" id="9IG-nI-uPQ">
+                    <view key="view" contentMode="scaleToFill" misplaced="YES" id="9IG-nI-uPQ">
                         <rect key="frame" x="0.0" y="0.0" width="393" height="735"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <mapView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="uK6-yp-EIr">
-                                <rect key="frame" x="0.0" y="0.0" width="393" height="735"/>
+                                <rect key="frame" x="0.0" y="0.0" width="393" height="769"/>
                                 <standardMapConfiguration key="preferredConfiguration"/>
                             </mapView>
                         </subviews>
@@ -103,6 +104,7 @@
                 <tabBarController automaticallyAdjustsScrollViewInsets="NO" id="53r-sD-XXn" sceneMemberID="viewController">
                     <toolbarItems/>
                     <tabBar key="tabBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" translucent="NO" id="RZj-0Q-ijl">
+                        <rect key="frame" x="0.0" y="0.0" width="1000" height="1000"/>
                         <autoresizingMask key="autoresizingMask"/>
                         <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                     </tabBar>
