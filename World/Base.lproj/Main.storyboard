@@ -3,7 +3,6 @@
     <device id="retina6_12" orientation="portrait" appearance="light"/>
     <dependencies>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="24063"/>
-        <capability name="Map view configurations" minToolsVersion="14.0"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="System colors in document resources" minToolsVersion="11.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
@@ -52,6 +51,7 @@
                         <color key="backgroundColor" red="0.96078431372549022" green="0.95686274509803915" blue="0.94509803921568625" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
                             <constraint firstItem="kah-5t-Chk" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="9fG-nO-p8Q"/>
+                            <constraint firstItem="rcX-Ag-K5p" firstAttribute="centerX" secondItem="6Tk-OE-BBY" secondAttribute="centerX" id="A7x-YS-qv6"/>
                             <constraint firstItem="fFQ-Zs-RRj" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="Fvy-Ll-Anf"/>
                             <constraint firstItem="9lk-Re-2bD" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="8" id="G2g-Oe-5Ua"/>
                             <constraint firstItem="ivv-Dk-UOQ" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="Hfc-92-kPS"/>
@@ -74,23 +74,11 @@
         <scene sceneID="3nD-Bd-aHA">
             <objects>
                 <viewController id="lok-Om-GCt" customClass="MapViewController" customModule="World" customModuleProvider="target" sceneMemberID="viewController">
-                    <view key="view" contentMode="scaleToFill" misplaced="YES" id="9IG-nI-uPQ">
+                    <view key="view" contentMode="scaleToFill" id="9IG-nI-uPQ">
                         <rect key="frame" x="0.0" y="0.0" width="393" height="769"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <subviews>
-                            <mapView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="uK6-yp-EIr">
-                                <rect key="frame" x="0.0" y="0.0" width="393" height="769"/>
-                                <standardMapConfiguration key="preferredConfiguration"/>
-                            </mapView>
-                        </subviews>
                         <viewLayoutGuide key="safeArea" id="dgI-82-gCQ"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
-                        <constraints>
-                            <constraint firstItem="uK6-yp-EIr" firstAttribute="leading" secondItem="dgI-82-gCQ" secondAttribute="leading" id="Mmi-UQ-sLK"/>
-                            <constraint firstItem="uK6-yp-EIr" firstAttribute="top" secondItem="9IG-nI-uPQ" secondAttribute="top" id="anu-Nk-m4P"/>
-                            <constraint firstItem="uK6-yp-EIr" firstAttribute="bottom" secondItem="9IG-nI-uPQ" secondAttribute="bottom" id="iRL-5q-ink"/>
-                            <constraint firstItem="uK6-yp-EIr" firstAttribute="trailing" secondItem="dgI-82-gCQ" secondAttribute="trailing" id="sM4-Mc-Mlp"/>
-                        </constraints>
                     </view>
                     <tabBarItem key="tabBarItem" title="Map" image="map" catalog="system" id="m6g-PR-LcD"/>
                 </viewController>
